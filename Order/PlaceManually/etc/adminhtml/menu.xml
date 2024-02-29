@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+   <menu>
+       <add id="Order_PlaceManually::menu"
+           title="Menual Order Grid" module="Order_PlaceManually"
+           sortOrder="10"
+           resource="Magento_Backend::content"
+           />
+       <add id="Order_PlaceManually::mycustomgrid"
+           title="Manual Order" module="Order_PlaceManually"
+           sortOrder="10" parent="Order_PlaceManually::menu"
+           action="ordergrid/mycustomgrid"
+           resource="Order_PlaceManually::mycustomgrid"
+           />
+   </menu>
+</config>
